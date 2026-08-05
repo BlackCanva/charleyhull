@@ -1,770 +1,647 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Charley Hull | Official Exclusive Fan Experiences & Meet-and-Greets</title>
-   <meta name="description" content="Book exclusive meet-and-greet fan experiences, VIP packages, and signed memorabilia directly with LPGA Tour star Charley Hull.">
-   
-   <!-- Google Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-   
-   <!-- Tailwind CSS CDN -->
-   <script src="https://cdn.tailwindcss.com"></script>
-   <script>
-       tailwind.config = {
-           theme: {
-               extend: {
-                   colors: {
-                       brandDark: '#0D0D0D',
-                       brandGreen: '#004225',
-                       brandGold: '#C8A24A',
-                       brandGoldHover: '#B08C36',
-                       brandCard: '#141414',
-                       brandBorder: '#262626'
-                   },
-                   fontFamily: {
-                       serif: ['"Playfair Display"', 'serif'],
-                       sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                   }
-               }
-           }
-       }
-   </script>
-   <style>
-       .gold-gradient-text {
-           background: linear-gradient(135deg, #FFF0CA 0%, #C8A24A 50%, #9A7728 100%);
-           -webkit-background-clip: text;
-           -webkit-text-fill-color: transparent;
-       }
-       .gold-border-glow {
-           box-shadow: 0 0 25px -5px rgba(200, 162, 74, 0.25);
-       }
-       .glass-panel {
-           background: rgba(20, 20, 20, 0.75);
-           backdrop-filter: blur(12px);
-           -webkit-backdrop-filter: blur(12px);
-       }
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charley Hull | Official Exclusive Fan Experiences</title>
+    <meta name="description" content="Official reservation portal for Charley Hull meet-and-greet fan experiences, VIP access, and authentic signed memorabilia.">
+    
+    <!-- Google Fonts: Cormorant Garamond (The Seasons styling equivalent) & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandMatte: '#0A0A0A',
+                        brandGreen: '#004225',
+                        brandGold: '#C8A24A',
+                        brandGoldHover: '#B08C36',
+                        brandCard: '#121212',
+                        brandBorder: '#222222'
+                    },
+                    fontFamily: {
+                        seasons: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0A0A0A;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF0CA 0%, #C8A24A 50%, #9A7728 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 30px -5px rgba(200, 162, 74, 0.2);
+        }
+        .glass-panel {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
 </head>
-<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandGold selection:text-brandDark">
+<body class="bg-brandMatte text-white font-sans antialiased selection:bg-brandGold selection:text-brandMatte">
 
-   <!-- Navigation Header -->
-   <header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 glass-panel border-b border-white/10">
-       <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-           <a href="#" class="font-serif text-2xl tracking-widest uppercase font-bold text-white hover:text-brandGold transition">
-               CHARLEY HULL
-           </a>
-           
-           <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
-               <a href="#about" class="text-neutral-300 hover:text-brandGold transition">ABOUT</a>
-               <a href="#packages" class="text-neutral-300 hover:text-brandGold transition">PACKAGES</a>
-               <a href="#events" class="text-neutral-300 hover:text-brandGold transition">EVENTS</a>
-               <a href="#merch" class="text-neutral-300 hover:text-brandGold transition">MERCHANDISE</a>
-               <a href="#faq" class="text-neutral-300 hover:text-brandGold transition">FAQ</a>
-               <a href="#contact" class="text-neutral-300 hover:text-brandGold transition">CONTACT</a>
-           </nav>
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 w-full z-50 glass-panel border-b border-brandBorder">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-seasons text-2xl tracking-widest uppercase font-semibold text-white hover:text-brandGold transition">
+                CHARLEY HULL
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-xs font-semibold tracking-widest uppercase">
+                <a href="#packages" class="text-neutral-400 hover:text-brandGold transition">Packages</a>
+                <a href="#events" class="text-neutral-400 hover:text-brandGold transition">Tournaments</a>
+                <a href="#merch" class="text-neutral-400 hover:text-brandGold transition">Store</a>
+                <a href="#faq" class="text-neutral-400 hover:text-brandGold transition">FAQ</a>
+            </nav>
 
-           <a href="#booking" class="bg-brandGold text-brandDark font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-brandGoldHover transition transform hover:-translate-y-0.5">
-               Reserve Experience
-           </a>
-       </div>
-   </header>
+            <a href="#booking" class="bg-brandGold text-brandMatte font-bold px-5 py-2.5 rounded-full text-xs uppercase tracking-wider hover:bg-brandGoldHover transition">
+                Book Experience
+            </a>
+        </div>
+    </header>
 
-   <!-- Hero Section -->
-   <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-       <!-- Background Image with Overlay -->
-       <div class="absolute inset-0 z-0">
-           <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=2000&auto=format&fit=crop" alt="Golf Course Fairway" class="w-full h-full object-cover object-center scale-105 transform">
-           <div class="absolute inset-0 bg-gradient-to-r from-brandDark via-brandDark/80 to-transparent"></div>
-           <div class="absolute inset-0 bg-gradient-to-t from-brandDark via-transparent to-brandDark/50"></div>
-       </div>
+    <!-- Hero Section -->
+    <section class="relative min-h-[85vh] flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Low-Opacity Background -->
+        <div class="absolute inset-0 z-0 opacity-15">
+            <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=2000&auto=format&fit=crop" alt="Golf Course Atmosphere" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-brandMatte/80"></div>
+        </div>
 
-       <div class="relative z-10 max-w-7xl mx-auto px-6 py-24 w-full grid md:grid-cols-12 gap-12 items-center">
-           <div class="md:col-span-8 space-y-6">
-               <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-brandGreen text-white border border-brandGold/30">
-                   Exclusive Fan Access
-               </span>
-               <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-none text-white">
-                   Meet Charley Hull <span class="gold-gradient-text italic font-normal">Today</span>
-               </h1>
-               <p class="text-xl md:text-2xl text-brandGold font-serif italic">
-                   Book Your Exclusive Fan Experience
-               </p>
-               <p class="text-neutral-300 max-w-2xl text-base md:text-lg leading-relaxed">
-                   Meet one of the world’s most exciting professional golfers through an unforgettable fan experience. Choose your package, reserve your place, and create lasting memories with exclusive access, signed memorabilia, and premium fan benefits.
-               </p>
-               <div class="pt-4 flex flex-col sm:flex-row gap-4">
-                   <a href="#booking" class="inline-flex justify-center items-center bg-brandGold text-brandDark font-bold px-8 py-4 rounded-full text-base hover:bg-brandGoldHover transition shadow-lg shadow-brandGold/20">
-                       Reserve Your Experience
-                   </a>
-                   <a href="#packages" class="inline-flex justify-center items-center bg-brandDark/80 backdrop-blur border border-white/20 text-white font-semibold px-8 py-4 rounded-full text-base hover:bg-white/10 transition">
-                       View Packages
-                   </a>
-               </div>
-           </div>
-       </div>
-   </section>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center space-y-6">
+            <span class="inline-block px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest bg-brandGreen text-white border border-brandGold/30">
+                Official Access Portal
+            </span>
+            <h1 class="font-seasons text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white leading-none">
+                Meet Charley Hull <span class="gold-gradient-text italic font-normal">Today</span>
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto font-light leading-relaxed">
+                Book your exclusive fan experience directly. Reserve your place, select optional signed memorabilia, and create lasting memories.
+            </p>
+        </div>
+    </section>
 
-   <!-- About Charley Hull Section -->
-   <section id="about" class="py-24 bg-brandDark border-t border-brandBorder">
-       <div class="max-w-7xl mx-auto px-6">
-           <div class="grid lg:grid-cols-12 gap-12 items-center">
-               <div class="lg:col-span-5 relative">
-                   <div class="relative z-10 rounded-2xl overflow-hidden border border-brandBorder">
-                       <img src="https://images.unsplash.com/photo-1592919505780-303950717480?q=80&w=1000&auto=format&fit=crop" alt="Charley Hull Swing Action" class="w-full h-auto object-cover">
-                   </div>
-                   <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-brandGold rounded-2xl z-0 hidden sm:block"></div>
-               </div>
+    <!-- Meet & Greet Packages Section -->
+    <section id="packages" class="py-20 bg-brandMatte border-t border-brandBorder">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandGold text-xs font-semibold uppercase tracking-widest block mb-2">Exclusive Access</span>
+                <h2 class="font-seasons text-4xl md:text-5xl font-bold text-white">Meet & Greet Packages</h2>
+            </div>
 
-               <div class="lg:col-span-7 space-y-6">
-                   <span class="text-brandGold text-sm font-semibold uppercase tracking-widest">Biography & Career Highlights</span>
-                   <h2 class="font-serif text-4xl md:text-5xl font-bold text-white">Fearless. Dynamic. Unstoppable.</h2>
-                   <p class="text-neutral-300 text-lg leading-relaxed">
-                       Charley Hull is an elite English professional golfer competing on both the LPGA Tour and the Ladies European Tour. Known worldwide for her aggressive, fearless playing style and charismatic fan connection, she burst onto the international stage as a prodigy and has cemented her standing as a top-tier global athlete.
-                   </p>
-                   <p class="text-neutral-400 text-base leading-relaxed">
-                       With multiple international victories and key Solheim Cup appearances representing Team Europe, Charley continues to captivate golf enthusiasts globally with her authentic personality and thrilling performances.
-                   </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Par Executive Experience -->
+                <div class="bg-brandCard rounded-2xl p-6 border border-brandBorder flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-seasons text-2xl font-bold text-white">Par Executive</h3>
+                        <div class="mt-4 mb-6">
+                            <span class="text-4xl font-bold text-white">$99</span>
+                            <span class="text-neutral-500 text-sm">/ person</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-neutral-300 mb-8">
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Personal meet-and-greet</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> One professional photo together</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Autograph on one personal item</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Brief conversation</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Priority access to meet line</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPackage('Par Executive Experience', 99)" class="w-full py-3 rounded-xl border border-brandGold text-brandGold font-semibold hover:bg-brandGold hover:text-brandMatte transition">
+                        Select Package
+                    </button>
+                </div>
 
-                   <!-- Stat Cards -->
-                   <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6">
-                       <div class="bg-brandCard p-5 rounded-xl border border-brandBorder text-center">
-                           <span class="block font-serif text-3xl font-bold text-brandGold" id="stat-wins">5</span>
-                           <span class="text-xs text-neutral-400 font-medium uppercase tracking-wider mt-1 block">Professional Wins</span>
-                       </div>
-                       <div class="bg-brandCard p-5 rounded-xl border border-brandBorder text-center">
-                           <span class="block font-serif text-3xl font-bold text-brandGold" id="stat-lpga">180+</span>
-                           <span class="text-xs text-neutral-400 font-medium uppercase tracking-wider mt-1 block">LPGA Tour Apps</span>
-                       </div>
-                       <div class="bg-brandCard p-5 rounded-xl border border-brandBorder text-center">
-                           <span class="block font-serif text-3xl font-bold text-brandGold" id="stat-solheim">7</span>
-                           <span class="text-xs text-neutral-400 font-medium uppercase tracking-wider mt-1 block">Solheim Cups</span>
-                       </div>
-                       <div class="bg-brandCard p-5 rounded-xl border border-brandBorder text-center">
-                           <span class="block font-serif text-3xl font-bold text-brandGold" id="stat-years">13</span>
-                           <span class="text-xs text-neutral-400 font-medium uppercase tracking-wider mt-1 block">Years Pro</span>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
+                <!-- Eagle Experience -->
+                <div class="bg-brandCard rounded-2xl p-6 border border-brandBorder flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-seasons text-2xl font-bold text-white">Eagle Experience</h3>
+                        <div class="mt-4 mb-6">
+                            <span class="text-4xl font-bold text-white">$249</span>
+                            <span class="text-neutral-500 text-sm">/ person</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-neutral-300 mb-8">
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Everything in Par Executive</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Extra time to chat</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Two professional photos</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Signed premium photo card</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Exclusive event lanyard / collectible</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Priority access to future fan events</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPackage('Eagle Experience', 249)" class="w-full py-3 rounded-xl border border-brandGold text-brandGold font-semibold hover:bg-brandGold hover:text-brandMatte transition">
+                        Select Package
+                    </button>
+                </div>
 
-   <!-- Packages Section -->
-   <section id="packages" class="py-24 bg-neutral-950 border-t border-brandBorder">
-       <div class="max-w-7xl mx-auto px-6">
-           <div class="text-center max-w-3xl mx-auto mb-16">
-               <span class="text-brandGold text-sm font-semibold uppercase tracking-widest">Exclusive Access</span>
-               <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mt-2">Meet & Greet Packages</h2>
-               <p class="text-neutral-400 mt-4 text-lg">Select your preferred level of access for an unforgettable personal experience.</p>
-           </div>
+                <!-- Championship Experience -->
+                <div class="bg-brandCard rounded-2xl p-6 border-2 border-brandGold relative flex flex-col justify-between gold-border-glow">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brandGold text-brandMatte text-xs font-bold uppercase tracking-widest py-1 px-4 rounded-full">
+                        Most Popular
+                    </div>
+                    <div>
+                        <h3 class="font-seasons text-2xl font-bold text-white">Championship</h3>
+                        <div class="mt-4 mb-6">
+                            <span class="text-4xl font-bold text-white">$499</span>
+                            <span class="text-neutral-500 text-sm">/ person</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-neutral-300 mb-8">
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Everything in Eagle</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Extended 1-on-1 interaction</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Personalized autograph</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Exclusive limited merchandise</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> First access to future tickets</li>
+                            <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Premium gift bag</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPackage('Championship Experience', 499)" class="w-full py-3 rounded-xl bg-brandGold text-brandMatte font-bold hover:bg-brandGoldHover transition">
+                        Select Package
+                    </button>
+                </div>
 
-           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-               <!-- Birdie Experience -->
-               <div class="bg-brandCard rounded-2xl p-6 border border-brandBorder flex flex-col justify-between hover:border-neutral-600 transition">
-                   <div>
-                       <h3 class="font-serif text-2xl font-bold text-white">Birdie</h3>
-                       <div class="mt-4 mb-6">
-                           <span class="text-4xl font-bold text-white">$99</span>
-                           <span class="text-neutral-400 text-sm">/ person</span>
-                       </div>
-                       <ul class="space-y-3 text-sm text-neutral-300 mb-8">
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Personal meet-and-greet</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> One professional photo together</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Autograph on one personal item</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Brief conversation</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Priority access to meet line</li>
-                       </ul>
-                   </div>
-                   <button onclick="selectPackage('Birdie Experience', 99)" class="w-full py-3 rounded-xl border border-brandGold text-brandGold font-semibold hover:bg-brandGold hover:text-brandDark transition">
-                       Select Birdie
-                   </button>
-               </div>
+                <!-- Legend VIP Experience (Gold Background Accent) -->
+                <div class="bg-gradient-to-b from-brandGold to-brandGoldHover rounded-2xl p-6 text-brandMatte flex flex-col justify-between shadow-2xl">
+                    <div>
+                        <span class="text-brandMatte text-xs font-bold uppercase tracking-widest block mb-1">Ultra Luxury Pass</span>
+                        <h3 class="font-seasons text-2xl font-bold text-brandMatte">Legend VIP</h3>
+                        <div class="mt-4 mb-6">
+                            <span class="text-4xl font-bold text-brandMatte">$999</span>
+                            <span class="text-brandMatte/80 text-sm">/ person</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-brandMatte/90 font-medium mb-8">
+                            <li class="flex items-start"><span class="text-brandMatte font-bold mr-2">✓</span> Premium meet-and-greet</li>
+                            <li class="flex items-start"><span class="text-brandMatte font-bold mr-2">✓</span> No rushed interaction</li>
+                            <li class="flex items-start"><span class="text-brandMatte font-bold mr-2">✓</span> Professional photo package</li>
+                            <li class="flex items-start"><span class="text-brandMatte font-bold mr-2">✓</span> Multiple signed items</li>
+                            <li class="flex items-start"><span class="text-brandMatte font-bold mr-2">✓</span> Limited-edition signed memorabilia</li>
+                            <li class="flex items-start"><span class="text-brandMatte font-bold mr-2">✓</span> VIP merchandise bundle</li>
+                            <li class="flex items-start"><span class="text-brandMatte font-bold mr-2">✓</span> Front-of-line access</li>
+                            <li class="flex items-start"><span class="text-brandMatte font-bold mr-2">✓</span> Future VIP invitation (where available)</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectPackage('Legend VIP Experience', 999)" class="w-full py-3 rounded-xl bg-brandMatte text-brandGold font-bold hover:bg-neutral-900 transition">
+                        Select VIP
+                    </button>
+                </div>
+            </div>
 
-               <!-- Eagle Experience -->
-               <div class="bg-brandCard rounded-2xl p-6 border border-brandBorder flex flex-col justify-between hover:border-neutral-600 transition">
-                   <div>
-                       <h3 class="font-serif text-2xl font-bold text-white">Eagle</h3>
-                       <div class="mt-4 mb-6">
-                           <span class="text-4xl font-bold text-white">$249</span>
-                           <span class="text-neutral-400 text-sm">/ person</span>
-                       </div>
-                       <ul class="space-y-3 text-sm text-neutral-300 mb-8">
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Everything in Birdie</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Extra time to chat</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Two professional photos</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Signed premium photo card</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Exclusive event lanyard / collectible</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Priority access to future fan events</li>
-                       </ul>
-                   </div>
-                   <button onclick="selectPackage('Eagle Experience', 249)" class="w-full py-3 rounded-xl border border-brandGold text-brandGold font-semibold hover:bg-brandGold hover:text-brandDark transition">
-                       Select Eagle
-                   </button>
-               </div>
+            <!-- Optional Add-Ons -->
+            <div class="mt-12 bg-brandCard p-8 rounded-2xl border border-brandBorder">
+                <h3 class="font-seasons text-2xl font-bold text-white mb-6 text-center">Optional Experience Add-Ons</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <label class="flex items-center p-4 bg-brandMatte rounded-xl border border-brandBorder cursor-pointer hover:border-brandGold transition">
+                        <input type="checkbox" class="addon-checkbox form-checkbox h-5 w-5 text-brandGold rounded focus:ring-0 bg-neutral-900 border-neutral-700" value="50" data-name="Additional Signed Item" onchange="calculateTotal()">
+                        <div class="ml-3">
+                            <span class="block text-sm font-semibold text-white">Signed Item</span>
+                            <span class="text-xs text-brandGold">+$50</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center p-4 bg-brandMatte rounded-xl border border-brandBorder cursor-pointer hover:border-brandGold transition">
+                        <input type="checkbox" class="addon-checkbox form-checkbox h-5 w-5 text-brandGold rounded focus:ring-0 bg-neutral-900 border-neutral-700" value="40" data-name="Printed Photo" onchange="calculateTotal()">
+                        <div class="ml-3">
+                            <span class="block text-sm font-semibold text-white">Printed Photo</span>
+                            <span class="text-xs text-brandGold">+$40</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center p-4 bg-brandMatte rounded-xl border border-brandBorder cursor-pointer hover:border-brandGold transition">
+                        <input type="checkbox" class="addon-checkbox form-checkbox h-5 w-5 text-brandGold rounded focus:ring-0 bg-neutral-900 border-neutral-700" value="150" data-name="Merch Bundle" onchange="calculateTotal()">
+                        <div class="ml-3">
+                            <span class="block text-sm font-semibold text-white">Merch Bundle</span>
+                            <span class="text-xs text-brandGold">+$150</span>
+                        </div>
+                    </label>
+                    <label class="flex items-center p-4 bg-brandMatte rounded-xl border border-brandBorder cursor-pointer hover:border-brandGold transition">
+                        <input type="checkbox" class="addon-checkbox form-checkbox h-5 w-5 text-brandGold rounded focus:ring-0 bg-neutral-900 border-neutral-700" value="75" data-name="Custom Autograph" onchange="calculateTotal()">
+                        <div class="ml-3">
+                            <span class="block text-sm font-semibold text-white">Custom Autograph</span>
+                            <span class="text-xs text-brandGold">+$75</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
 
-               <!-- Championship Experience -->
-               <div class="bg-brandCard rounded-2xl p-6 border-2 border-brandGold relative flex flex-col justify-between gold-border-glow">
-                   <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brandGold text-brandDark text-xs font-bold uppercase tracking-widest py-1 px-4 rounded-full">
-                       Most Popular
-                   </div>
-                   <div>
-                       <h3 class="font-serif text-2xl font-bold text-white">Championship</h3>
-                       <div class="mt-4 mb-6">
-                           <span class="text-4xl font-bold text-white">$499</span>
-                           <span class="text-neutral-400 text-sm">/ person</span>
-                       </div>
-                       <ul class="space-y-3 text-sm text-neutral-300 mb-8">
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Everything in Eagle</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Extended 1-on-1 interaction</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Personalized autograph</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Exclusive limited merchandise</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> First access to future tickets</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Premium gift bag</li>
-                       </ul>
-                   </div>
-                   <button onclick="selectPackage('Championship Experience', 499)" class="w-full py-3 rounded-xl bg-brandGold text-brandDark font-bold hover:bg-brandGoldHover transition">
-                       Select Championship
-                   </button>
-               </div>
+    <!-- Upcoming Tournaments Section -->
+    <section id="events" class="py-20 bg-brandMatte border-t border-brandBorder">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-12">
+                <span class="text-brandGold text-xs font-semibold uppercase tracking-widest block mb-2">Schedule</span>
+                <h2 class="font-seasons text-4xl font-bold text-white">Upcoming Tournaments</h2>
+            </div>
 
-               <!-- Legend VIP Experience -->
-               <div class="bg-gradient-to-b from-brandGreen/40 to-brandCard rounded-2xl p-6 border border-brandGold/50 flex flex-col justify-between">
-                   <div>
-                       <span class="text-brandGold text-xs font-bold uppercase tracking-widest block mb-1">VIP Exclusive</span>
-                       <h3 class="font-serif text-2xl font-bold text-white">Legend VIP</h3>
-                       <div class="mt-4 mb-6">
-                           <span class="text-4xl font-bold text-white">$999</span>
-                           <span class="text-neutral-400 text-sm">/ person</span>
-                       </div>
-                       <ul class="space-y-3 text-sm text-neutral-300 mb-8">
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Unrushed VIP experience</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Complete photo package</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Multiple signed items</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Limited-edition signed memorabilia</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Complete VIP merchandise bundle</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Front-of-line access</li>
-                           <li class="flex items-start"><span class="text-brandGold mr-2">✓</span> Future VIP invitation (where available)</li>
-                       </ul>
-                   </div>
-                   <button onclick="selectPackage('Legend VIP Experience', 999)" class="w-full py-3 rounded-xl bg-brandGreen border border-brandGold/40 text-white font-bold hover:border-brandGold transition">
-                       Select Legend VIP
-                   </button>
-               </div>
-           </div>
+            <div class="grid lg:grid-cols-3 gap-6 mb-12">
+                <!-- PIF London Championship -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-brandBorder">
+                    <span class="text-xs text-brandGold font-semibold block mb-2">August 8–10, 2026</span>
+                    <h3 class="font-seasons text-2xl font-bold text-white">PIF London Championship</h3>
+                    <p class="text-neutral-400 text-sm mt-2">Centurion Club, St Albans, UK</p>
+                </div>
 
-           <!-- Add-Ons -->
-           <div class="mt-16 bg-brandCard p-8 rounded-2xl border border-brandBorder">
-               <h3 class="font-serif text-2xl font-bold text-white mb-6 text-center">Optional Experience Add-Ons</h3>
-               <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                   <label class="flex items-center p-4 bg-brandDark rounded-xl border border-brandBorder cursor-pointer hover:border-brandGold transition">
-                       <input type="checkbox" class="addon-checkbox form-checkbox h-5 w-5 text-brandGold rounded focus:ring-0 bg-neutral-800 border-neutral-600" value="50" data-name="Additional Signed Item" onchange="calculateTotal()">
-                       <div class="ml-3">
-                           <span class="block text-sm font-semibold text-white">Signed Item</span>
-                           <span class="text-xs text-brandGold">+$50</span>
-                       </div>
-                   </label>
-                   <label class="flex items-center p-4 bg-brandDark rounded-xl border border-brandBorder cursor-pointer hover:border-brandGold transition">
-                       <input type="checkbox" class="addon-checkbox form-checkbox h-5 w-5 text-brandGold rounded focus:ring-0 bg-neutral-800 border-neutral-600" value="40" data-name="Printed Photo" onchange="calculateTotal()">
-                       <div class="ml-3">
-                           <span class="block text-sm font-semibold text-white">Printed Photo</span>
-                           <span class="text-xs text-brandGold">+$40</span>
-                       </div>
-                   </label>
-                   <label class="flex items-center p-4 bg-brandDark rounded-xl border border-brandBorder cursor-pointer hover:border-brandGold transition">
-                       <input type="checkbox" class="addon-checkbox form-checkbox h-5 w-5 text-brandGold rounded focus:ring-0 bg-neutral-800 border-neutral-600" value="150" data-name="Merch Bundle" onchange="calculateTotal()">
-                       <div class="ml-3">
-                           <span class="block text-sm font-semibold text-white">Merch Bundle</span>
-                           <span class="text-xs text-brandGold">+$150</span>
-                       </div>
-                   </label>
-                   <label class="flex items-center p-4 bg-brandDark rounded-xl border border-brandBorder cursor-pointer hover:border-brandGold transition">
-                       <input type="checkbox" class="addon-checkbox form-checkbox h-5 w-5 text-brandGold rounded focus:ring-0 bg-neutral-800 border-neutral-600" value="75" data-name="Custom Autograph" onchange="calculateTotal()">
-                       <div class="ml-3">
-                           <span class="block text-sm font-semibold text-white">Custom Autograph</span>
-                           <span class="text-xs text-brandGold">+$75</span>
-                       </div>
-                   </label>
-               </div>
-           </div>
-       </div>
-   </section>
+                <!-- KPMG Women's Irish Open -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-brandBorder">
+                    <span class="text-xs text-brandGold font-semibold block mb-2">August 27–30, 2026</span>
+                    <h3 class="font-seasons text-2xl font-bold text-white">KPMG Women's Irish Open</h3>
+                    <p class="text-neutral-400 text-sm mt-2">The K Club, County Kildare, Ireland</p>
+                </div>
 
-   <!-- Upcoming Events Section -->
-   <section id="events" class="py-24 bg-brandDark border-t border-brandBorder">
-       <div class="max-w-7xl mx-auto px-6">
-           <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
-               <div>
-                   <span class="text-brandGold text-sm font-semibold uppercase tracking-widest">Schedule</span>
-                   <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mt-2">Upcoming Tour Events</h2>
-               </div>
-               <p class="text-neutral-400 mt-4 md:mt-0 max-w-md">Reserve your meet-and-greet spot at major tournament stops and private showcase venues globally.</p>
-           </div>
+                <!-- Solheim Cup 2026 -->
+                <div class="bg-brandCard p-6 rounded-2xl border border-brandBorder">
+                    <span class="text-xs text-brandGold font-semibold block mb-2">September 7–13, 2026</span>
+                    <h3 class="font-seasons text-2xl font-bold text-white">Solheim Cup 2026</h3>
+                    <p class="text-neutral-400 text-sm mt-2">Bernardus Golf, Cromvoirt, Netherlands</p>
+                    <p class="text-xs text-neutral-500 mt-3 border-t border-brandBorder pt-3">Competition days: Sept 11–13. Charley Hull qualified automatically by topping the LET points list.</p>
+                </div>
+            </div>
 
-           <div class="grid md:grid-cols-3 gap-8">
-               <!-- Event 1 -->
-               <div class="bg-brandCard rounded-2xl p-6 border border-brandBorder hover:border-brandGold/50 transition">
-                   <div class="flex justify-between items-start mb-4">
-                       <span class="px-3 py-1 rounded-full text-xs font-semibold bg-emerald-950 text-emerald-400 border border-emerald-800">Available</span>
-                       <span class="text-xs text-neutral-400">Sep 18, 2026</span>
-                   </div>
-                   <h3 class="font-serif text-xl font-bold text-white">The Chevron Fan Showcase</h3>
-                   <p class="text-neutral-400 text-sm mt-1">Carlton Woods, Texas</p>
-                   <p class="text-xs text-brandGold mt-2">United States</p>
-                   <div class="mt-6 pt-4 border-t border-brandBorder flex items-center justify-between">
-                       <span class="text-xs text-neutral-400">Availability: High</span>
-                       <a href="#booking" onclick="selectEvent('The Chevron Fan Showcase (Texas, USA)')" class="text-sm font-semibold text-brandGold hover:underline">Reserve Spot →</a>
-                   </div>
-               </div>
+            <!-- London Exclusive Meet (With Booking Option) -->
+            <div class="bg-gradient-to-r from-brandGreen/60 to-brandCard p-8 rounded-2xl border border-brandGold/40 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <span class="px-3 py-1 rounded-full text-xs font-bold uppercase bg-amber-950 text-amber-400 border border-amber-800 inline-block mb-3">Limited Availability — Only 4 Slots Left</span>
+                    <h3 class="font-seasons text-3xl font-bold text-white">London Exclusive Meet</h3>
+                    <p class="text-neutral-300 text-sm mt-1">Mayfair Private Club, Mayfair, London W1K, United Kingdom</p>
+                </div>
+                <a href="#booking" onclick="selectEvent('London Exclusive Meet (Mayfair Private Club, London)')" class="bg-brandGold text-brandMatte font-bold px-8 py-3 rounded-xl hover:bg-brandGoldHover transition text-sm uppercase tracking-wider whitespace-nowrap">
+                    Reserve Spot
+                </a>
+            </div>
+        </div>
+    </section>
 
-               <!-- Event 2 -->
-               <div class="bg-brandCard rounded-2xl p-6 border border-brandBorder hover:border-brandGold/50 transition">
-                   <div class="flex justify-between items-start mb-4">
-                       <span class="px-3 py-1 rounded-full text-xs font-semibold bg-amber-950 text-amber-400 border border-amber-800">Limited</span>
-                       <span class="text-xs text-neutral-400">Oct 02, 2026</span>
-                   </div>
-                   <h3 class="font-serif text-xl font-bold text-white">London Exclusive Meet</h3>
-                   <p class="text-neutral-400 text-sm mt-1">Centurion Club, St Albans</p>
-                   <p class="text-xs text-brandGold mt-2">United Kingdom</p>
-                   <div class="mt-6 pt-4 border-t border-brandBorder flex items-center justify-between">
-                       <span class="text-xs text-amber-400">Only 4 slots left</span>
-                       <a href="#booking" onclick="selectEvent('London Exclusive Meet (Centurion Club, UK)')" class="text-sm font-semibold text-brandGold hover:underline">Reserve Spot →</a>
-                   </div>
-               </div>
+    <!-- Official Store Section -->
+    <section id="merch" class="py-20 bg-brandMatte border-t border-brandBorder">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brandGold text-xs font-semibold uppercase tracking-widest block mb-2">Official Store</span>
+                <h2 class="font-seasons text-4xl md:text-5xl font-bold text-white">Exclusive Signed Memorabilia</h2>
+                <p class="text-neutral-400 mt-3 text-base">Authentic collectibles signed personally by Charley Hull. Add items directly to your event booking.</p>
+            </div>
 
-               <!-- Event 3 -->
-               <div class="bg-brandCard rounded-2xl p-6 border border-brandBorder opacity-80">
-                   <div class="flex justify-between items-start mb-4">
-                       <span class="px-3 py-1 rounded-full text-xs font-semibold bg-rose-950 text-rose-400 border border-rose-800">Sold Out</span>
-                       <span class="text-xs text-neutral-400">Nov 12, 2026</span>
-                   </div>
-                   <h3 class="font-serif text-xl font-bold text-white">AIG Women's Open Fan Session</h3>
-                   <p class="text-neutral-400 text-sm mt-1">Royal Troon, Scotland</p>
-                   <p class="text-xs text-brandGold mt-2">United Kingdom</p>
-                   <div class="mt-6 pt-4 border-t border-brandBorder flex items-center justify-between">
-                       <span class="text-xs text-neutral-500">Waitlist Only</span>
-                       <button disabled class="text-sm font-semibold text-neutral-600 cursor-not-allowed">Sold Out</button>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandBorder">
+                    <div class="h-60 bg-neutral-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=800&auto=format&fit=crop" alt="Signed Golf Balls" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-seasons text-xl font-bold text-white">Signed Pro V1 Ball Set</h3>
+                            <span class="text-brandGold font-bold">$120</span>
+                        </div>
+                        <p class="text-neutral-400 text-xs mt-2">Official tournament golf balls hand-signed by Charley Hull.</p>
+                        <button onclick="addMerchToBooking('Signed Pro V1 Ball Set', 120)" class="mt-6 w-full py-2.5 rounded-xl border border-white/20 text-white font-medium hover:bg-white hover:text-brandMatte transition text-xs uppercase tracking-wider">
+                            Add to Booking
+                        </button>
+                    </div>
+                </div>
 
-   <!-- Merchandise Section -->
-   <section id="merch" class="py-24 bg-neutral-950 border-t border-brandBorder">
-       <div class="max-w-7xl mx-auto px-6">
-           <div class="text-center max-w-3xl mx-auto mb-16">
-               <span class="text-brandGold text-sm font-semibold uppercase tracking-widest">Official Store</span>
-               <h2 class="font-serif text-4xl md:text-5xl font-bold text-white mt-2">Exclusive Signed Memorabilia</h2>
-               <p class="text-neutral-400 mt-4 text-lg">Authentic collectibles signed personally by Charley Hull. Add items directly to your event booking.</p>
-           </div>
+                <!-- Item 2 -->
+                <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandBorder">
+                    <div class="h-60 bg-neutral-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop" alt="Signed Cap" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-seasons text-xl font-bold text-white">Autographed Signature Cap</h3>
+                            <span class="text-brandGold font-bold">$95</span>
+                        </div>
+                        <p class="text-neutral-400 text-xs mt-2">Custom fitted tour visor signed on the brim with COA included.</p>
+                        <button onclick="addMerchToBooking('Autographed Signature Cap', 95)" class="mt-6 w-full py-2.5 rounded-xl border border-white/20 text-white font-medium hover:bg-white hover:text-brandMatte transition text-xs uppercase tracking-wider">
+                            Add to Booking
+                        </button>
+                    </div>
+                </div>
 
-           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-               <!-- Merch Item 1 -->
-               <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandBorder group">
-                   <div class="h-64 bg-neutral-900 overflow-hidden relative">
-                       <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?q=80&w=800&auto=format&fit=crop" alt="Signed Golf Ball Set" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                   </div>
-                   <div class="p-6">
-                       <div class="flex justify-between items-baseline">
-                           <h3 class="font-serif text-xl font-bold text-white">Signed Pro V1 Ball Set</h3>
-                           <span class="text-brandGold font-bold">$120</span>
-                       </div>
-                       <p class="text-neutral-400 text-sm mt-2">Official tournament-grade golf balls hand-signed by Charley Hull.</p>
-                       <button onclick="addMerchToBooking('Signed Pro V1 Ball Set', 120)" class="mt-6 w-full py-2.5 rounded-xl border border-white/20 text-white font-medium hover:bg-white hover:text-brandDark transition text-sm">
-                           Add to Booking
-                       </button>
-                   </div>
-               </div>
+                <!-- Item 3 -->
+                <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandBorder">
+                    <div class="h-60 bg-neutral-900 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=800&auto=format&fit=crop" alt="Limited Poster" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-baseline">
+                            <h3 class="font-seasons text-xl font-bold text-white">Solheim Cup Poster (1/100)</h3>
+                            <span class="text-brandGold font-bold">$180</span>
+                        </div>
+                        <p class="text-neutral-400 text-xs mt-2">Limited run museum-grade print signed and numbered.</p>
+                        <button onclick="addMerchToBooking('Solheim Cup Poster (1/100)', 180)" class="mt-6 w-full py-2.5 rounded-xl border border-white/20 text-white font-medium hover:bg-white hover:text-brandMatte transition text-xs uppercase tracking-wider">
+                            Add to Booking
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-               <!-- Merch Item 2 -->
-               <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandBorder group">
-                   <div class="h-64 bg-neutral-900 overflow-hidden relative">
-                       <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&w=800&auto=format&fit=crop" alt="Signed Cap" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                   </div>
-                   <div class="p-6">
-                       <div class="flex justify-between items-baseline">
-                           <h3 class="font-serif text-xl font-bold text-white">Autographed Signature Cap</h3>
-                           <span class="text-brandGold font-bold">$95</span>
-                       </div>
-                       <p class="text-neutral-400 text-sm mt-2">Custom fitted tour visor signed on the brim with COA included.</p>
-                       <button onclick="addMerchToBooking('Autographed Signature Cap', 95)" class="mt-6 w-full py-2.5 rounded-xl border border-white/20 text-white font-medium hover:bg-white hover:text-brandDark transition text-sm">
-                           Add to Booking
-                       </button>
-                   </div>
-               </div>
+    <!-- Booking Form Section with HD Portrait Headshot -->
+    <section id="booking" class="py-20 bg-brandMatte border-t border-brandBorder">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- HD Charley Hull Portrait -->
+                <div class="lg:col-span-5">
+                    <div class="rounded-2xl overflow-hidden border border-brandBorder relative">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000&auto=format&fit=crop" alt="Charley Hull Portrait" class="w-full h-[520px] object-cover object-top">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brandMatte via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="font-seasons text-2xl font-bold text-white block">Charley Hull</span>
+                            <span class="text-xs text-brandGold uppercase tracking-widest block mt-1">Professional Golfer • LPGA & LET Tour</span>
+                        </div>
+                    </div>
+                </div>
 
-               <!-- Merch Item 3 -->
-               <div class="bg-brandCard rounded-2xl overflow-hidden border border-brandBorder group">
-                   <div class="h-64 bg-neutral-900 overflow-hidden relative">
-                       <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=800&auto=format&fit=crop" alt="Limited Edition Poster" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                   </div>
-                   <div class="p-6">
-                       <div class="flex justify-between items-baseline">
-                           <h3 class="font-serif text-xl font-bold text-white">Solheim Cup Poster (1/100)</h3>
-                           <span class="text-brandGold font-bold">$180</span>
-                       </div>
-                       <p class="text-neutral-400 text-sm mt-2">Limited run museum-grade metallic print signed and numbered.</p>
-                       <button onclick="addMerchToBooking('Solheim Cup Poster (1/100)', 180)" class="mt-6 w-full py-2.5 rounded-xl border border-white/20 text-white font-medium hover:bg-white hover:text-brandDark transition text-sm">
-                           Add to Booking
-                       </button>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
+                <!-- Form Inputs -->
+                <div class="lg:col-span-7">
+                    <span class="text-brandGold text-xs font-semibold uppercase tracking-widest block mb-2">Reservation</span>
+                    <h2 class="font-seasons text-4xl font-bold text-white mb-6">Book Your Experience</h2>
 
-   <!-- Booking Form Section -->
-   <section id="booking" class="py-24 bg-brandDark border-t border-brandBorder">
-       <div class="max-w-7xl mx-auto px-6">
-           <div class="grid lg:grid-cols-12 gap-12">
-               <div class="lg:col-span-7">
-                   <span class="text-brandGold text-sm font-semibold uppercase tracking-widest">Reservation</span>
-                   <h2 class="font-serif text-4xl font-bold text-white mt-2 mb-8">Book Your Experience</h2>
+                    <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-5">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Full Name</label>
+                                <input type="text" required placeholder="e.g. Jane Doe" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none text-sm transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Email Address</label>
+                                <input type="email" required placeholder="jane@example.com" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none text-sm transition">
+                            </div>
+                        </div>
 
-                   <form id="reservationForm" onsubmit="handleReservationSubmit(event)" class="space-y-6">
-                       <div class="grid sm:grid-cols-2 gap-6">
-                           <div>
-                               <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Full Name</label>
-                               <input type="text" required placeholder="e.g. John Doe" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none transition">
-                           </div>
-                           <div>
-                               <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Email Address</label>
-                               <input type="email" required placeholder="john@example.com" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none transition">
-                           </div>
-                       </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+44 7000 000000" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none text-sm transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Country</label>
+                                <input type="text" required placeholder="United Kingdom / United States" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none text-sm transition">
+                            </div>
+                        </div>
 
-                       <div class="grid sm:grid-cols-2 gap-6">
-                           <div>
-                               <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Phone Number</label>
-                               <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none transition">
-                           </div>
-                           <div>
-                               <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Country</label>
-                               <input type="text" required placeholder="United Kingdom / United States" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none transition">
-                           </div>
-                       </div>
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Preferred Event</label>
+                                <select id="eventSelect" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none text-sm transition">
+                                    <option value="London Exclusive Meet (Mayfair, London)">London Exclusive Meet (Mayfair, London)</option>
+                                    <option value="PIF London Championship Showcase">PIF London Championship Showcase</option>
+                                    <option value="KPMG Women's Irish Open Meet">KPMG Women's Irish Open Meet</option>
+                                    <option value="Solheim Cup 2026 Fan Session">Solheim Cup 2026 Fan Session</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Package Selection</label>
+                                <select id="packageSelect" onchange="updateFormPackageSelection()" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none text-sm transition">
+                                    <option value="Par Executive Experience" data-price="99">Par Executive Experience ($99)</option>
+                                    <option value="Eagle Experience" data-price="249">Eagle Experience ($249)</option>
+                                    <option value="Championship Experience" data-price="499" selected>Championship Experience ($499)</option>
+                                    <option value="Legend VIP Experience" data-price="999">Legend VIP Experience ($999)</option>
+                                </select>
+                            </div>
+                        </div>
 
-                       <div class="grid sm:grid-cols-2 gap-6">
-                           <div>
-                               <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Preferred Event Stop</label>
-                               <select id="eventSelect" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none transition">
-                                   <option value="The Chevron Fan Showcase (Texas, USA)">The Chevron Fan Showcase (Texas, USA)</option>
-                                   <option value="London Exclusive Meet (Centurion Club, UK)">London Exclusive Meet (Centurion Club, UK)</option>
-                                   <option value="Private VIP Tour Session (TBD)">Private VIP Session (TBD)</option>
-                               </select>
-                           </div>
-                           <div>
-                               <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Package Selection</label>
-                               <select id="packageSelect" onchange="updateFormPackageSelection()" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none transition">
-                                   <option value="Birdie Experience" data-price="99">Birdie Experience ($99)</option>
-                                   <option value="Eagle Experience" data-price="249">Eagle Experience ($249)</option>
-                                   <option value="Championship Experience" data-price="499" selected>Championship Experience ($499)</option>
-                                   <option value="Legend VIP Experience" data-price="999">Legend VIP Experience ($999)</option>
-                               </select>
-                           </div>
-                       </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Number of Guests</label>
+                            <input type="number" id="guestCount" min="1" max="10" value="1" onchange="calculateTotal()" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none text-sm transition">
+                        </div>
 
-                       <div>
-                           <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Number of Guests</label>
-                           <input type="number" id="guestCount" min="1" max="10" value="1" onchange="calculateTotal()" class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none transition">
-                       </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Special Requests or Dedication Notes</label>
+                            <textarea rows="3" placeholder="Provide any autograph customization names or specific accessibility requests..." class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none text-sm transition"></textarea>
+                        </div>
 
-                       <div>
-                           <label class="block text-xs font-semibold uppercase text-neutral-400 mb-2">Special Requests or Personalization Details</label>
-                           <textarea rows="3" placeholder="Let us know if you have specific accessibility requests or autograph dedication preferences..." class="w-full bg-brandCard border border-brandBorder rounded-xl px-4 py-3 text-white focus:border-brandGold focus:outline-none transition"></textarea>
-                       </div>
+                        <!-- Live Summary Widget -->
+                        <div class="bg-brandCard p-5 rounded-xl border border-brandGold/30">
+                            <div class="flex justify-between items-center text-sm border-b border-brandBorder pb-3 mb-3">
+                                <span class="text-neutral-400">Selected Event: <strong id="summaryEvent" class="text-white">London Exclusive Meet</strong></span>
+                                <span class="text-neutral-400">Package Total: <strong id="summaryBasePrice" class="text-white">$499</strong></span>
+                            </div>
+                            <div class="flex justify-between items-baseline">
+                                <span class="text-sm font-semibold text-white">Total Booking Value:</span>
+                                <span class="text-3xl font-bold text-brandGold" id="summaryTotal">$499</span>
+                            </div>
+                        </div>
 
-                       <button type="submit" class="w-full py-4 bg-brandGold text-brandDark font-bold rounded-xl hover:bg-brandGoldHover transition shadow-lg text-lg">
-                           Complete Reservation
-                       </button>
-                   </form>
-               </div>
+                        <button type="submit" class="w-full py-4 bg-brandGold text-brandMatte font-bold rounded-xl hover:bg-brandGoldHover transition shadow-lg text-base">
+                            Complete Reservation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-               <!-- Booking Summary -->
-               <div class="lg:col-span-5">
-                   <div class="bg-brandCard p-8 rounded-2xl border border-brandGold/40 sticky top-28 gold-border-glow">
-                       <h3 class="font-serif text-2xl font-bold text-white border-b border-brandBorder pb-4">Booking Summary</h3>
+    <!-- Booking Policy Section -->
+    <section class="py-16 bg-neutral-950 border-t border-brandBorder">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="font-seasons text-2xl font-bold text-white mb-6">Booking Policy & Terms</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm text-neutral-400">
+                <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
+                    <strong class="text-white block mb-1">Full Payment Required</strong>
+                    Full payment must be completed at registration to guarantee your exclusive session entry.
+                </div>
+                <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
+                    <strong class="text-white block mb-1">First-Come Basis</strong>
+                    Packages are strictly limited per venue stop to maintain exclusivity and avoid rushed interactions.
+                </div>
+                <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
+                    <strong class="text-white block mb-1">Cancellation Terms</strong>
+                    All sales are final unless an event is official rescheduled or canceled by tour organizers.
+                </div>
+                <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
+                    <strong class="text-white block mb-1">Conduct Policy</strong>
+                    Attendees are required to maintain sportsmanship and respect toward athletes, staff, and other guests.
+                </div>
+            </div>
+        </div>
+    </section>
 
-                       <div class="py-6 space-y-4 border-b border-brandBorder text-sm">
-                           <div class="flex justify-between">
-                               <span class="text-neutral-400">Selected Event:</span>
-                               <span class="text-white font-medium text-right max-w-[200px]" id="summaryEvent">The Chevron Fan Showcase</span>
-                           </div>
-                           <div class="flex justify-between">
-                               <span class="text-neutral-400">Package:</span>
-                               <span class="text-white font-medium" id="summaryPackage">Championship Experience</span>
-                           </div>
-                           <div class="flex justify-between">
-                               <span class="text-neutral-400">Base Price (x<span id="summaryGuests">1</span>):</span>
-                               <span class="text-white font-medium" id="summaryBasePrice">$499</span>
-                           </div>
-                           <div class="flex justify-between">
-                               <span class="text-neutral-400">Add-Ons Total:</span>
-                               <span class="text-white font-medium" id="summaryAddons">$0</span>
-                           </div>
-                       </div>
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-brandMatte border-t border-brandBorder">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="text-brandGold text-xs font-semibold uppercase tracking-widest block mb-2">Inquiries</span>
+                <h2 class="font-seasons text-4xl font-bold text-white">Frequently Asked Questions</h2>
+            </div>
 
-                       <div class="pt-6 flex justify-between items-baseline">
-                           <span class="text-lg font-serif text-white">Total Amount</span>
-                           <span class="text-4xl font-bold text-brandGold" id="summaryTotal">$499</span>
-                       </div>
+            <div class="space-y-4">
+                <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-seasons font-bold text-lg text-white flex justify-between items-center focus:outline-none">
+                        <span>Can I bring my own memorabilia?</span>
+                        <span class="transform transition-transform text-brandGold">+</span>
+                    </button>
+                    <div class="px-6 pb-5 hidden text-neutral-400 text-sm leading-relaxed">
+                        Yes! Guests are welcome to bring personal golf flags, caps, or photos for autographs corresponding to their chosen package tier.
+                    </div>
+                </div>
 
-                       <p class="text-xs text-neutral-400 mt-6 leading-relaxed">
-                           🔒 All reservations are processed securely. Your booking confirmation will be emailed immediately upon verification.
-                       </p>
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
+                <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-seasons font-bold text-lg text-white flex justify-between items-center focus:outline-none">
+                        <span>Can I purchase more than one package?</span>
+                        <span class="transform transition-transform text-brandGold">+</span>
+                    </button>
+                    <div class="px-6 pb-5 hidden text-neutral-400 text-sm leading-relaxed">
+                        Yes, you can reserve multiple passes for family members or guests directly through the reservation system while quantities remain available.
+                    </div>
+                </div>
 
-   <!-- Booking Policy -->
-   <section class="py-16 bg-neutral-950 border-t border-brandBorder">
-       <div class="max-w-7xl mx-auto px-6">
-           <h3 class="font-serif text-2xl font-bold text-white mb-6">Booking Policy & Terms</h3>
-           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm text-neutral-400">
-               <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
-                   <strong class="text-white block mb-1">Full Payment Required</strong>
-                   Full payment must be completed at registration to guarantee your exclusive session entry.
-               </div>
-               <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
-                   <strong class="text-white block mb-1">First-Come Basis</strong>
-                   Packages are strictly limited per venue stop to maintain exclusivity and avoid rushed interactions.
-               </div>
-               <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
-                   <strong class="text-white block mb-1">Cancellation Terms</strong>
-                   All sales are final unless an event is official rescheduled or canceled by tour organizers.
-               </div>
-               <div class="bg-brandCard p-5 rounded-xl border border-brandBorder">
-                   <strong class="text-white block mb-1">Conduct Policy</strong>
-                   Attendees are required to maintain sportsmanship and respect toward athletes, staff, and other guests.
-               </div>
-           </div>
-       </div>
-   </section>
+                <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-seasons font-bold text-lg text-white flex justify-between items-center focus:outline-none">
+                        <span>Are professional photographs included?</span>
+                        <span class="transform transition-transform text-brandGold">+</span>
+                    </button>
+                    <div class="px-6 pb-5 hidden text-neutral-400 text-sm leading-relaxed">
+                        Yes. A professional photographer will capture your meet-and-greet moment. High-resolution digital downloads are delivered within 48 hours of the event.
+                    </div>
+                </div>
 
-   <!-- FAQ Section -->
-   <section id="faq" class="py-24 bg-brandDark border-t border-brandBorder">
-       <div class="max-w-4xl mx-auto px-6">
-           <div class="text-center mb-16">
-               <span class="text-brandGold text-sm font-semibold uppercase tracking-widest">Inquiries</span>
-               <h2 class="font-serif text-4xl font-bold text-white mt-2">Frequently Asked Questions</h2>
-           </div>
+                <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-seasons font-bold text-lg text-white flex justify-between items-center focus:outline-none">
+                        <span>What happens if an event is rescheduled?</span>
+                        <span class="transform transition-transform text-brandGold">+</span>
+                    </button>
+                    <div class="px-6 pb-5 hidden text-neutral-400 text-sm leading-relaxed">
+                        In the rare event of a weather postponement or schedule shift, your booking will automatically transfer to the rescheduled date or a full refund will be offered.
+                    </div>
+                </div>
 
-           <div class="space-y-4">
-               <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
-                   <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-serif font-bold text-lg text-white flex justify-between items-center focus:outline-none">
-                       <span>Can I bring my own memorabilia?</span>
-                       <span class="transform transition-transform text-brandGold">+</span>
-                   </button>
-                   <div class="px-6 pb-5 hidden text-neutral-300 text-sm leading-relaxed">
-                       Yes! Guests are welcome to bring personal golf flags, caps, or photos for autographs corresponding to their chosen package tier.
-                   </div>
-               </div>
+                <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
+                    <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-seasons font-bold text-lg text-white flex justify-between items-center focus:outline-none">
+                        <span>Are packages transferable?</span>
+                        <span class="transform transition-transform text-brandGold">+</span>
+                    </button>
+                    <div class="px-6 pb-5 hidden text-neutral-400 text-sm leading-relaxed">
+                        Passes can be transferred to another individual up to 72 hours before the scheduled session by contacting customer support.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-               <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
-                   <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-serif font-bold text-lg text-white flex justify-between items-center focus:outline-none">
-                       <span>Can I purchase more than one package?</span>
-                       <span class="transform transition-transform text-brandGold">+</span>
-                   </button>
-                   <div class="px-6 pb-5 hidden text-neutral-300 text-sm leading-relaxed">
-                       Yes, you can reserve multiple passes for family members or guests directly through the reservation system while quantities remain available.
-                   </div>
-               </div>
+    <!-- Footer -->
+    <footer class="py-12 bg-black border-t border-brandBorder text-neutral-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+            <div>
+                <p>&copy; 2026 Charley Hull Official Fan Experiences. All Rights Reserved.</p>
+                <p class="mt-1 text-neutral-600">Disclaimer: Commercial use of Charley Hull's name and image rights requires explicit authorization.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-brandGold transition">Privacy Policy</a>
+                <a href="#" class="hover:text-brandGold transition">Terms & Conditions</a>
+                <a href="#faq" class="hover:text-brandGold transition">Support</a>
+            </div>
+        </div>
+    </footer>
 
-               <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
-                   <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-serif font-bold text-lg text-white flex justify-between items-center focus:outline-none">
-                       <span>Are professional photographs included?</span>
-                       <span class="transform transition-transform text-brandGold">+</span>
-                   </button>
-                   <div class="px-6 pb-5 hidden text-neutral-300 text-sm leading-relaxed">
-                       Yes. A professional photographer will capture your meet-and-greet moment. High-resolution digital downloads are delivered within 48 hours of the event.
-                   </div>
-               </div>
+    <!-- Official Thank You Confirmation Modal -->
+    <div id="thankYouModal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-6">
+        <div class="bg-brandCard border border-brandGold max-w-lg w-full p-8 rounded-2xl text-center space-y-5 gold-border-glow">
+            <span class="text-4xl">✨</span>
+            <h3 class="font-seasons text-3xl font-bold text-white">Thank You for Your Reservation</h3>
+            <p class="text-neutral-300 text-sm leading-relaxed">
+                Your booking request has been successfully received by <strong>Charley Hull’s Management Team</strong>.
+            </p>
+            <p class="text-neutral-400 text-xs leading-relaxed border-t border-b border-brandBorder py-4">
+                We will reach out to you via email shortly with your official access itinerary, confirmation receipt, and venue arrival details. Please check your inbox and spam folder.
+            </p>
+            <button onclick="closeModal()" class="w-full py-3 bg-brandGold text-brandMatte font-bold rounded-xl hover:bg-brandGoldHover transition text-sm uppercase tracking-wider">
+                Close Window
+            </button>
+        </div>
+    </div>
 
-               <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
-                   <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-serif font-bold text-lg text-white flex justify-between items-center focus:outline-none">
-                       <span>What happens if an event is rescheduled?</span>
-                       <span class="transform transition-transform text-brandGold">+</span>
-                   </button>
-                   <div class="px-6 pb-5 hidden text-neutral-300 text-sm leading-relaxed">
-                       In the rare event of a weather postponement or schedule shift, your booking will automatically transfer to the rescheduled date or a full refund will be offered.
-                   </div>
-               </div>
+    <!-- Dynamic JavaScript Calculation & Interaction Scripts -->
+    <script>
+        let selectedPackagePrice = 499;
+        let merchPriceTotal = 0;
 
-               <div class="bg-brandCard rounded-xl border border-brandBorder overflow-hidden">
-                   <button onclick="toggleFaq(this)" class="w-full px-6 py-5 text-left font-serif font-bold text-lg text-white flex justify-between items-center focus:outline-none">
-                       <span>Are packages transferable?</span>
-                       <span class="transform transition-transform text-brandGold">+</span>
-                   </button>
-                   <div class="px-6 pb-5 hidden text-neutral-300 text-sm leading-relaxed">
-                       Passes can be transferred to another individual up to 72 hours before the scheduled session by contacting customer support.
-                   </div>
-               </div>
-           </div>
-       </div>
-   </section>
+        function selectPackage(packageName, price) {
+            selectedPackagePrice = price;
+            const selectEl = document.getElementById('packageSelect');
+            for (let i = 0; i < selectEl.options.length; i++) {
+                if (selectEl.options[i].value === packageName) {
+                    selectEl.selectedIndex = i;
+                    break;
+                }
+            }
+            calculateTotal();
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
 
-   <!-- Contact Section -->
-   <section id="contact" class="py-24 bg-neutral-950 border-t border-brandBorder">
-       <div class="max-w-7xl mx-auto px-6">
-           <div class="grid lg:grid-cols-2 gap-12">
-               <div>
-                   <span class="text-brandGold text-sm font-semibold uppercase tracking-widest">Get in Touch</span>
-                   <h2 class="font-serif text-4xl font-bold text-white mt-2">Management & Inquiries</h2>
-                   <p class="text-neutral-400 mt-4 leading-relaxed">
-                       For brand sponsorships, corporate booking, media accreditation, or general fan support inquiries, please reach out directly via the form or official channels below.
-                   </p>
+        function updateFormPackageSelection() {
+            const selectEl = document.getElementById('packageSelect');
+            const selectedOption = selectEl.options[selectEl.selectedIndex];
+            selectedPackagePrice = parseFloat(selectedOption.getAttribute('data-price')) || 0;
+            calculateTotal();
+        }
 
-                   <div class="mt-8 space-y-4 text-sm text-neutral-300">
-                       <div class="p-4 bg-brandCard rounded-xl border border-brandBorder">
-                           <strong class="text-brandGold block">Business Enquiries:</strong>
-                           <span class="text-neutral-400">management@charleyhull.example</span>
-                       </div>
-                       <div class="p-4 bg-brandCard rounded-xl border border-brandBorder">
-                           <strong class="text-brandGold block">Media & Accreditation:</strong>
-                           <span class="text-neutral-400">press@charleyhull.example</span>
-                       </div>
-                   </div>
+        function selectEvent(eventName) {
+            document.getElementById('eventSelect').value = eventName;
+            calculateTotal();
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+        }
 
-                   <div class="mt-8 flex space-x-4">
-                       <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full bg-brandCard border border-brandBorder flex items-center justify-center text-white hover:border-brandGold hover:text-brandGold transition">IG</a>
-                       <a href="https://x.com" target="_blank" class="w-10 h-10 rounded-full bg-brandCard border border-brandBorder flex items-center justify-center text-white hover:border-brandGold hover:text-brandGold transition">X</a>
-                       <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-full bg-brandCard border border-brandBorder flex items-center justify-center text-white hover:border-brandGold hover:text-brandGold transition">FB</a>
-                       <a href="https://tiktok.com" target="_blank" class="w-10 h-10 rounded-full bg-brandCard border border-brandBorder flex items-center justify-center text-white hover:border-brandGold hover:text-brandGold transition">TK</a>
-                       <a href="https://youtube.com" target="_blank" class="w-10 h-10 rounded-full bg-brandCard border border-brandBorder flex items-center justify-center text-white hover:border-brandGold hover:text-brandGold transition">YT</a>
-                   </div>
-               </div>
+        function addMerchToBooking(itemName, price) {
+            merchPriceTotal += price;
+            alert(`Added "${itemName}" ($${price}) to your total!`);
+            calculateTotal();
+        }
 
-               <form class="bg-brandCard p-8 rounded-2xl border border-brandBorder space-y-4">
-                   <h3 class="font-serif text-2xl font-bold text-white mb-4">Send a Direct Message</h3>
-                   <div>
-                       <label class="block text-xs uppercase text-neutral-400 mb-1">Your Name</label>
-                       <input type="text" placeholder="Full Name" class="w-full bg-brandDark border border-brandBorder rounded-xl p-3 text-white focus:border-brandGold focus:outline-none">
-                   </div>
-                   <div>
-                       <label class="block text-xs uppercase text-neutral-400 mb-1">Email Address</label>
-                       <input type="email" placeholder="Email Address" class="w-full bg-brandDark border border-brandBorder rounded-xl p-3 text-white focus:border-brandGold focus:outline-none">
-                   </div>
-                   <div>
-                       <label class="block text-xs uppercase text-neutral-400 mb-1">Inquiry Type</label>
-                       <select class="w-full bg-brandDark border border-brandBorder rounded-xl p-3 text-white focus:border-brandGold focus:outline-none">
-                           <option>Fan Support</option>
-                           <option>Business Enquiries</option>
-                           <option>Media Requests</option>
-                       </select>
-                   </div>
-                   <div>
-                       <label class="block text-xs uppercase text-neutral-400 mb-1">Message</label>
-                       <textarea rows="4" placeholder="How can we assist you?" class="w-full bg-brandDark border border-brandBorder rounded-xl p-3 text-white focus:border-brandGold focus:outline-none"></textarea>
-                   </div>
-                   <button type="button" class="w-full py-3 bg-white text-brandDark font-bold rounded-xl hover:bg-neutral-200 transition">
-                       Submit Inquiry
-                   </button>
-               </form>
-           </div>
-       </div>
-   </section>
+        function calculateTotal() {
+            const packageSelect = document.getElementById('packageSelect');
+            const packageName = packageSelect.value;
+            const eventSelect = document.getElementById('eventSelect').value;
+            const guestCount = parseInt(document.getElementById('guestCount').value) || 1;
 
-   <!-- Footer -->
-   <footer class="py-12 bg-black border-t border-brandBorder text-neutral-500 text-xs">
-       <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-           <div>
-               <p>© 2026 Charley Hull Official Fan Experiences. All Rights Reserved.</p>
-               <p class="mt-1 text-neutral-600">Disclaimer: Commercial use of Charley Hull's name and image rights requires explicit authorization.</p>
-           </div>
-           <div class="flex space-x-6">
-               <a href="#" class="hover:text-brandGold transition">Privacy Policy</a>
-               <a href="#" class="hover:text-brandGold transition">Terms & Conditions</a>
-               <a href="#contact" class="hover:text-brandGold transition">Contact Support</a>
-           </div>
-       </div>
-   </footer>
+            let addonsTotal = 0;
+            const checkboxes = document.querySelectorAll('.addon-checkbox:checked');
+            checkboxes.forEach(cb => {
+                addonsTotal += parseFloat(cb.value);
+            });
 
-   <!-- Scripts -->
-   <script>
-       let selectedPackagePrice = 499;
-       let merchPriceTotal = 0;
+            const grandTotal = (selectedPackagePrice * guestCount) + addonsTotal + merchPriceTotal;
 
-       function selectPackage(packageName, price) {
-           selectedPackagePrice = price;
-           const selectEl = document.getElementById('packageSelect');
-           for (let i = 0; i < selectEl.options.length; i++) {
-               if (selectEl.options[i].value === packageName) {
-                   selectEl.selectedIndex = i;
-                   break;
-               }
-           }
-           calculateTotal();
-           document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
-       }
+            document.getElementById('summaryEvent').innerText = eventSelect;
+            document.getElementById('summaryBasePrice').innerText = `$${selectedPackagePrice * guestCount}`;
+            document.getElementById('summaryTotal').innerText = `$${grandTotal}`;
+        }
 
-       function updateFormPackageSelection() {
-           const selectEl = document.getElementById('packageSelect');
-           const selectedOption = selectEl.options[selectEl.selectedIndex];
-           selectedPackagePrice = parseFloat(selectedOption.getAttribute('data-price')) || 0;
-           calculateTotal();
-       }
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('span:last-child');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.innerText = '-';
+            } else {
+                content.classList.add('hidden');
+                icon.innerText = '+';
+            }
+        }
 
-       function selectEvent(eventName) {
-           document.getElementById('eventSelect').value = eventName;
-           calculateTotal();
-           document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
-       }
+        function handleReservationSubmit(e) {
+            e.preventDefault();
+            document.getElementById('thankYouModal').classList.remove('hidden');
+        }
 
-       function addMerchToBooking(itemName, price) {
-           merchPriceTotal += price;
-           alert(`Added "${itemName}" ($${price}) to your booking calculations!`);
-           calculateTotal();
-       }
+        function closeModal() {
+            document.getElementById('thankYouModal').classList.add('hidden');
+        }
 
-       function calculateTotal() {
-           const packageSelect = document.getElementById('packageSelect');
-           const packageName = packageSelect.value;
-           const eventSelect = document.getElementById('eventSelect').value;
-           const guestCount = parseInt(document.getElementById('guestCount').value) || 1;
-
-           let addonsTotal = 0;
-           const checkboxes = document.querySelectorAll('.addon-checkbox:checked');
-           checkboxes.forEach(cb => {
-               addonsTotal += parseFloat(cb.value);
-           });
-
-           const grandTotal = (selectedPackagePrice * guestCount) + addonsTotal + merchPriceTotal;
-
-           document.getElementById('summaryEvent').innerText = eventSelect;
-           document.getElementById('summaryPackage').innerText = packageName;
-           document.getElementById('summaryGuests').innerText = guestCount;
-           document.getElementById('summaryBasePrice').innerText = `$${selectedPackagePrice * guestCount}`;
-           document.getElementById('summaryAddons').innerText = `$${addonsTotal + merchPriceTotal}`;
-           document.getElementById('summaryTotal').innerText = `$${grandTotal}`;
-       }
-
-       function toggleFaq(button) {
-           const content = button.nextElementSibling;
-           const icon = button.querySelector('span:last-child');
-           
-           if (content.classList.contains('hidden')) {
-               content.classList.remove('hidden');
-               icon.innerText = '-';
-           } else {
-               content.classList.add('hidden');
-               icon.innerText = '+';
-           }
-       }
-
-       function handleReservationSubmit(e) {
-           e.preventDefault();
-           alert('Thank you! Your reservation inquiry has been submitted successfully.');
-       }
-
-       document.addEventListener('DOMContentLoaded', () => {
-           calculateTotal();
-       });
-   </script>
+        document.addEventListener('DOMContentLoaded', () => {
+            calculateTotal();
+        });
+    </script>
 </body>
 </html>
